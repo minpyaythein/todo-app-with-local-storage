@@ -1,0 +1,28 @@
+.list-group-item {
+    position: relative;
+    cursor: pointer;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+.details-popup {
+    display: none;
+    position: absolute;
+    bottom: 100%; /* Position above the li */
+    left: 5%; /* Move the tooltip a bit to the right */
+    background-color: #f9f9f9;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 12px;
+    color: #333;
+    white-space: nowrap;
+    z-index: 10;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out; /* Smooth transition */
+}
+
+.list-group-item.show-popup .details-popup {
+    display: block;
+    opacity: 1;
+}
