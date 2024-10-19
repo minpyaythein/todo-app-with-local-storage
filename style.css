@@ -8,8 +8,8 @@
 .details-popup {
     display: none;
     position: absolute;
-    bottom: 100%; /* Position above the li */
-    left: 5%; /* Move the tooltip a bit to the right */
+    bottom: 100%;
+    left: 5%;
     background-color: #f9f9f9;
     padding: 5px;
     border: 1px solid #ccc;
@@ -19,7 +19,7 @@
     white-space: nowrap;
     z-index: 10;
     opacity: 0;
-    transition: opacity 0.3s ease-in-out; /* Smooth transition */
+    transition: opacity 0.3s ease-in-out;
 }
 
 .list-group-item.show-popup .details-popup {
